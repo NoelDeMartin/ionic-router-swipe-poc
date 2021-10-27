@@ -1,5 +1,9 @@
-<app-user-profile
-    (swipeleft)="swipeLeft()"
-    (swiperight)="swipeRight()"
-    [user]="user"
-></app-user-profile>
+<ion-slides>
+    <ion-slide>
+        <app-user-profile
+            (swipeleft)="swipeLeft()"
+            (swiperight)="swipeRight()"
+            [user]="user"
+        ></app-user-profile>
+    </ion-slide>
+</ion-slides>

@@ -5,6 +5,7 @@ import { User, UsersService } from '../users.service';
 @Component({
     selector: 'app-user-profile-page',
     templateUrl: './user-profile.page.html',
+    styleUrls: ['./user-profile.page.scss'],
 })
 export class UserProfilePage {
 
