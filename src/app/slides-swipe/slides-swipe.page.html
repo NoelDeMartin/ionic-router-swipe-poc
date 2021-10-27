@@ -1,0 +1,16 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Slides Swipe</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-slides>
+        <ion-slide *ngFor="let user of users">
+            <app-user-profile [user]="user"></app-user-profile>
+        </ion-slide>
+    </ion-slides>
+</ion-content>

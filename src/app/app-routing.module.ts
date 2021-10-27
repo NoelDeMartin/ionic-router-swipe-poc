@@ -12,6 +12,14 @@ const routes: Routes = [
         redirectTo: 'home',
         pathMatch: 'full',
     },
+    {
+        path: 'routing-swipe',
+        loadChildren: () => import('./routing-swipe/routing-swipe.module').then( m => m.RoutingSwipePageModule),
+    },
+    {
+        path: 'slides-swipe',
+        loadChildren: () => import('./slides-swipe/slides-swipe.module').then( m => m.SlidesSwipePageModule),
+    },
 ];
 
 @NgModule({
